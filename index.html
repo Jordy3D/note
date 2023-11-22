@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bane | Note</title>
+    <link rel="icon" href="https://jordy3d.github.io/files/logo.ico">
+
+    <link rel="stylesheet" href="css/magic.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Bane Tree">
+    <meta property="og:description" content="A weird note thing">
+    <meta property="og:image" content="https://jordy3d.github.io/files/logo.png">
+    <meta property="og:url" content="https://jordy3d.github.io/note">
+    <meta property="og:type" content="website">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        header,
+        footer {
+            background-color: #0003;
+            color: #fff;
+
+            text-align: center;
+        }
+
+        .note {
+            width: 100%;
+            max-width: 1000px;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin: 0 auto;
+        }
+
+        .noteArea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            font-size: 2rem;
+            padding: 1rem;
+            outline: none;
+        }
+
+        .noteArea.empty::before
+        {
+            content: "Enter some text...";
+            color: #fff5;
+            font-style: italic;
+            font-size: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    </header>
+
+    <main>
+        <div class="note">
+            <div id="note" class="noteArea" contenteditable="true" style="font-size: 2rem;"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p><a href="https://github.com/Jordy3D/note">note</a> made by <a href="https://github.com/Jordy3D">Bane</a>. still very incomplete.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

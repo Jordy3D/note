@@ -1,0 +1,18 @@
+/* This file just makes it so that if you have too few links on the page to cause it to scroll, the footer will be on the bottom of the viewport, while allowing it to scroll normally otherwise. 
+Like... magic. */
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	min-height: 100%;
+	margin: 0;
+}
+
+footer {
+	margin-top: auto;
+}

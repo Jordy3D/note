@@ -1,0 +1,27 @@
+
+/*Dark Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #252525;
+}
+
+::-webkit-scrollbar-corner {
+    background: #0000;
+}
+
+/* Main */
+
+body {
+    background-color: #333;
+}
